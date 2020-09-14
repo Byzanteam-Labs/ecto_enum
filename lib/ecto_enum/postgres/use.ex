@@ -38,7 +38,7 @@ defmodule EctoEnum.Postgres.Use do
         raise Ecto.ChangeError, message: msg
       end
 
-      def embed_as(_), do: :self
+      def embed_as(_), do: :dump
 
       def equal?(term1, term2), do: term1 == term2
 
